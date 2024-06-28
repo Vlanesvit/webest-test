@@ -1,0 +1,28 @@
+.btn {
+	position: relative;
+	overflow: hidden;
+	-webkit-appearance: button;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	border: 1px solid transparent;
+	font-variant-numeric: lining-nums proportional-nums;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 130%; /* 25.6px */
+	padding: 12px 24px;
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 10px;
+	color: #fff;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #fff;
+			color: #000;
+		}
+	}
+}
