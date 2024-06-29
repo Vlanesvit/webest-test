@@ -23,7 +23,7 @@
 					</div>
 
 					<div class="header__cart">
-						<div class="header__cart_btn">
+						<button type="button" class="header__cart_btn">
 							<div class="header__cart_icon">
 								<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
@@ -33,10 +33,15 @@
 								</svg>
 							</div>
 							<div class="header__cart_counter">0</div>
-						</div>
+						</button>
 
 						<div class="header__cart_modal">
-							<div class="header__cart_items"></div>
+							<form action="#" method="post">
+								<div class="header__cart_items">
+								</div>
+								<div class="header__cart_total_price">Итоговая цена: 0 руб</div>
+								<button button="submit" class="btn">Оформить заказ</button>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -62,6 +67,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 1500 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -80,6 +86,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 2000 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -98,6 +105,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 2500 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -116,6 +124,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 500 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -134,6 +143,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 100 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -152,6 +162,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 3000 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -170,6 +181,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 300 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -188,6 +200,7 @@
 										<h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
 										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.
 										</p>
+										<div class="catalog__price">Цена: 800 руб</div>
 										<div class="catalog__buttons" data-popup="#product">
 											<a href="#" class="btn">Подробнее</a>
 										</div>
@@ -216,7 +229,6 @@
 					</svg>
 				</button>
 				<div class="popup__text">
-					<!-- <form action="#" method="POST"> -->
 					<div class="catalog__item">
 						<div class="catalog__img">
 							<img src="" alt="">
@@ -230,18 +242,16 @@
 										class="quantity__button quantity__button_minus"></button>
 									<div class="quantity__input">
 										<input autocomplete="off" type="text" name="form[]" value="1"
-											data-quantity-value>
+											data-quantity-value readonly>
 									</div>
 									<button type="button" data-quantity-plus
 										class="quantity__button quantity__button_plus"></button>
 								</div>
-
-								<!-- <button type="submit" class="btn">Добавить в корзину</button> -->
-								<button type="button" class="btn">Добавить в корзину</button>
+								<button type="button" class="btn" data-close>Добавить в корзину</button>
 							</div>
+							<div class="catalog__price"></div>
 						</div>
 					</div>
-					<!-- </form> -->
 				</div>
 			</div>
 		</div>
